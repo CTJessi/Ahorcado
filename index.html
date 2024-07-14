@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del Ahorcado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="startScreen">
+        <img src="images/background.jpg" alt="Fondo de Pantalla de Inicio" class="backgroundImage">
+        <h1>Bienvenido al Juego del Ahorcado</h1>
+        <p>¡Adivina la palabra antes de que se agoten tus intentos!</p>
+        <button id="startButton">Empezar Juego</button>
+    </div>
+    <div id="gameScreen" style="display: none;">
+        <h1>Juego del Ahorcado</h1>
+        <div>
+            <button class="difficultyButton" data-difficulty="easy">Fácil</button>
+            <button class="difficultyButton" data-difficulty="medium">Medio</button>
+            <button class="difficultyButton" data-difficulty="hard">Difícil</button>
+        </div>
+        <div>
+            <p id="wordDisplay">Palabra Oculta</p>
+            <p>Intentos restantes: <span id="attemptCount">6</span></p>
+            <input type="text" id="guessInput" maxlength="1" placeholder="Introduce una letra">
+            <button id="guessButton">Adivinar</button>
+            <button id="restartButton" style="display: none;">Jugar de Nuevo</button>
+        </div>
+        <div>
+            <p id="message">¡Elige una dificultad y empieza a jugar!</p>
+            <p id="history">Letras adivinadas: <span id="guessHistory"></span></p>
+            <p id="stats">
+                Juegos jugados: <span id="gamesPlayed">0</span> |
+                Juegos ganados: <span id="gamesWon">0</span> |
+                Juegos perdidos: <span id="gamesLost">0</span>
+            </p>
+        </div>
+    </div>
+    <audio id="correctSound" src="sounds/correct.mp3"></audio>
+    <audio id="wrongSound" src="sounds/wrong.mp3"></audio>
+    <audio id="winSound" src="sounds/win.mp3"></audio>
+    <audio id="loseSound" src="sounds/lose.mp3"></audio>
+    <audio id="backgroundMusic" src="sounds/background-music.mp3" loop></audio>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+#startScreen {
+    background-image: url('images/background.png');
+    background-size: cover;
+    background-position: center;
+}
+
+
+h1 {
+    color: #333;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#startScreen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #e0f7fa;
+}
+
+#startScreen h1 {
+    font-size: 2.5em;
+}
+
+#startScreen p {
+    font-size: 1.2em;
+}
+
+#startScreen #startButton {
+    background-color: #00acc1;
+    margin-top: 20px;
+}
+
+#startScreen #startButton:hover {
+    background-color: #00838f;
+}
+
+#gameScreen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9fbe7;
+    padding: 20px;
+}
+
+#wordDisplay {
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+#message {
+    font-size: 1.2em;
+    color: #333;
+}
+
+#history {
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+#stats {
+    margin-top: 20px;
+    font-size: 1em;
+    color: #555;
+}
